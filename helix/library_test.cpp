@@ -17,13 +17,6 @@ UT_TEST_CASE(polygon_test) {
 }
 UT_TEST_CASE_END(polygon_test)
 
-UT_TEST_CASE(polyhedron_test) {
-  int n = 10;
-  Grid<Polyhedron> mesh({n, n, n});
-  meshb::write(mesh, "results/polyhedra.meshb");
-}
-UT_TEST_CASE_END(polyhedron_test)
-
 UT_TEST_CASE(sphere_test) {
   Sphere mesh(2);
   mesh.add_prism_layers(1.5, 5, 2.0);

@@ -413,6 +413,5 @@ template class Grid<Triangle>;
 template class Grid<Quad>;
 template class Grid<Polygon>;
 template class Grid<Tet>;
-template class Grid<Polyhedron>;
 
 }  // namespace helix

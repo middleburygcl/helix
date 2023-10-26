@@ -1,0 +1,5 @@
+build
+sandbox
+data/*.meshb
+data/*.igs
+data/*.step

@@ -34,13 +34,13 @@ add_extern_repository(libmeshb GIT_REPOSITORY "https://github.com/LoicMarechal/l
 add_extern_repository(tinyobjloader GIT_REPOSITORY "https://github.com/tinyobjloader/tinyobjloader")
 add_extern_repository(argparse GIT_REPOSITORY "https://github.com/p-ranav/argparse")
 add_extern_repository(morton GIT_REPOSITORY "https://github.com/morton-nd/morton-nd")
-add_extern_repository(stlext GIT_REPOSITORY "https://github.com/middpolymer/stlext" SKIP_CONFIG TRUE)
-add_extern_repository(OpenNL GIT_REPOSITORY "https://github.com/middpolymer/geogram.psm.OpenNL" SKIP_CONFIG TRUE)
-add_extern_repository(PCK GIT_REPOSITORY "https://github.com/middpolymer/geogram.psm.Predicates" SKIP_CONFIG TRUE)
+add_extern_repository(stlext GIT_REPOSITORY "https://github.com/middleburygcl/stlext" SKIP_CONFIG TRUE)
+add_extern_repository(OpenNL GIT_REPOSITORY "https://github.com/middleburygcl/geogram.psm.OpenNL" SKIP_CONFIG TRUE)
+add_extern_repository(PCK GIT_REPOSITORY "https://github.com/middleburygcl/geogram.psm.Predicates" SKIP_CONFIG TRUE)
 add_extern_repository(tetgen GIT_REPOSITORY "https://github.com/libigl/tetgen.git")
 
 if(WITH_EGADS)
-	add_extern_repository(egads GIT_REPOSITORY "https://github.com/middpolymer/egads")
+	add_extern_repository(egads GIT_REPOSITORY "https://github.com/middleburygcl/egads")
 endif()
 
 # utilities to clean up and update repositories
@@ -104,7 +104,7 @@ else()
 endif()
 
 set(EXTERN_SOURCES
-	${CMAKE_CURRENT_SOURCE_DIR}/extern/OpenNL/OpenNL_psm.c
+	${CMAKE_CURRENT_SOURCE_DIR}/extern/OpenNL/OpenNL_psm/OpenNL_psm.c
     ${CMAKE_CURRENT_SOURCE_DIR}/extern/PCK/Predicates_psm.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/extern/tinyobjloader/tiny_obj_loader.cc
 	${CMAKE_CURRENT_SOURCE_DIR}/extern/libmeshb/sources/libmeshb7.c

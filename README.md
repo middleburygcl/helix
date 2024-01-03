@@ -9,7 +9,7 @@ Currently, the main features include an interface for importing an `EGADS` geome
 Build with CMake:
 
 ```sh
-git clone git@github.com:middpolymer/helix.git
+git clone git@github.com:middleburygcl/helix.git
 cd helix
 mkdir build
 cd build
